@@ -1,8 +1,9 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { logIn } from 'redux/auth/operations';
-import { FormControl, InputLabel, Input, Button, Typography, Link } from '@mui/material';
+import { FormControl, InputLabel, Input, Button, Typography } from '@mui/material';
 import { Notify } from 'notiflix';
+import { NavLink } from 'react-router-dom';
 
 const formStyles = {
   display: 'flex',
@@ -88,7 +89,7 @@ const LoginForm = () => {
         LogIn
       </Button>
       <Typography>
-        <Link to="/register">Don't have an account? Sign up!</Link>
+        <NavLink to="/register">Don't have an account? Sign up!</NavLink>
       </Typography>
     </form>
   );
