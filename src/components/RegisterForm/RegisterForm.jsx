@@ -68,7 +68,7 @@ const RegisterForm = () => {
 
     if (!isPasswordValid(password)) {
       setPasswordError(
-        'Password must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters. For example TgeV23592, 3Greioct.'
+        "Password must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters. For example TgeV23592, 3Greioct."
       );
       return;
     }
@@ -146,7 +146,7 @@ const RegisterForm = () => {
           <Typography color="error">{passwordError}</Typography>
         )}
       </FormControl>
-      <Button type="submit" style={styles.button}>
+      <Button type='submit' style={styles.button}>
         Register
       </Button>
       <Typography>
